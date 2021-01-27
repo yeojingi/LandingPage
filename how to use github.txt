@@ -1,0 +1,4 @@
+git status : 싱크 확인
+git add . : 모든 파일을 트래킹한다
+git commit -m "메세지" : 트래킹한 파일을 push함
+git push origin master : 업로드 권한 필요 로그인을 요청하는 창이 나옴.
