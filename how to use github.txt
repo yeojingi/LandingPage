@@ -1,4 +1,19 @@
-git status : 싱크 확인
-git add . : 모든 파일을 트래킹한다
-git commit -m "메세지" : 트래킹한 파일을 push함
-git push origin master : 업로드 권한 필요 로그인을 요청하는 창이 나옴.
+1. GitBash 설치
+2. New Repository 생성
+ Repository : github 내 나만의 공간
+3. Root Folder 연결
+ Root Folder : Web 상의 Git과 연결될 Local Folder
+ 원하는 위치에 새 폴더를 만든다.
+ Root Folder 연결 Command
+  0) 폴더 우클릭 후 Git Bash Here를 실행
+  1) git init
+  2) git remote add origin [repository address - github에서 찾을 수 있다]
+4. Push 전엔 Pull이 있다
+ Pull : 지정한 Respository에서 끌어온다.
+ 1) git pull origin master
+ git status : sinc 확인
+ git add . : 변경할 파일들을 모두 tracking
+ git commit -m "message" : 인식할 수 있는 commit을 달아줍니다.
+ git push origin +master : 실제로 git에 PUSH!
+
+5. Mission :: 다른 사람 git 가져오기

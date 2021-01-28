@@ -2,19 +2,85 @@
 <head>
 <title>This is the most important part for search engine</title>
 <meta charset="UTF-8">
+<style>
+    a {
+        color:black;
+        text-decoration: none;
+    }
+
+    h1 {
+        border-bottom : 1px solid gray;
+        font-size : 45px;
+        text-align : center;
+        margin : 0px;
+        padding-bottom: 20px;
+    }
+
+    #grid ol {
+        border-right : 1px solid gray;
+        margin-top: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    body {
+        margin : 0px;
+    }
+
+    #grid {
+        display : grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    #article {
+        padding : 25px;
+    }
+    @media (max-width : 800px) {
+        #grid {
+            display : block;
+        }
+
+        ol {
+            border : none;
+            list-style: none;
+            border : 1px solid green;
+        }
+
+        h1 {
+            border  :none;
+            border : 1px solid green;
+        }
+
+        h1, ol, #article {
+            text-align: center;
+            border : 1px solid green;
+        }
+    }
+</style>
 </head>
 
 <body>
-    <h1><a href="index.html">WEB</a>></h1>
-    <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="1.html">CSS</a></li>
-    <li><a href="1.html">JavaScript</a></li>
-    </ol>
+    <h1><a href="index.html"><font color = 'red'>WEB</font></a></h1>
+    <div id ="grid">
+        <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="1.html">CSS</a></li>
+        <li><a href="1.html">JavaScript</a></li>
+        </ol>
 
-<h1>HTML</h1>
-<p><a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
-<img width="50%" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
-</p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
+        <div id = "article">
+            <div>
+            <p>
+                <a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+                <img width="50%" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
+            </p>
+            </div>
+            <div>
+            <p>
+                HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. 
+            </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
