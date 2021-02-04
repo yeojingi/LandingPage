@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1><a href="#">Web</a></h1>
+        <div class="Buttons">
+            <input type = "button" value ="night" onclick="document.querySelector('body').style.background='black';">
+            <input id="night_day" type="button" value="night" onclick="
+                var target = document.querySelector('body');
+                if(this.value === 'night'){
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                this.value = 'day';
+                } else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                this.value = 'night';
+                }
+            ">
+            <input class = "night_day_toggle" type = "button" value = "night" onclick ="
+            var target = document.querySelector('body');
+            var subject = document.getElementsByClassName('night_day_toggle');
+            if (subject[0].value === 'night') {
+                target.style.background = 'black';
+                target.style.color='white';
+                subject[0].value = 'day';
+                subject[1].value = 'day';
+            } else {
+                target.style.background = 'white';
+                target.style.color='black';
+                subject[0].value = 'night';
+                subject[1].value = 'night';
+            }
+            ">
+            <input class = "night_day_toggle" type = "button" value = "night" onclick ="
+            var target = document.querySelector('body');
+            var subject = document.getElementsByClassName('night_day_toggle');
+            if (subject[0].value === 'night') {
+                target.style.background = 'black';
+                target.style.color='white';
+                subject[0].value = 'day';
+                subject[1].value = 'day';
+            } else {
+                target.style.background = 'white';
+                target.style.color='black';
+                subject[0].value = 'night';
+                subject[1].value = 'night';
+            }
+            ">
+        </div>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <p> Hello this is Jingi.</p>
+    </main>
+</body>
+</html>
