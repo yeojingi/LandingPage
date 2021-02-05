@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+span {
+    float: left;
+    width : 20px;
+    height : 20px;
+    background-color: green;
+    margin : 3px;
+}
+
+.row {
+    display : block;
+    clear: both;
+}
