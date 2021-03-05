@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.num {
+    font-size : 3.3em;
+    font-weight: 900;
+    position : absolute;
+    top : 15px;
+    color : rgb(178, 178, 178);
+}
+
+.outer-shell {
+    position : relative;
+    border : 12px solid rgb(255, 227, 195);
+    border-radius : 20px;
+    width: 700px;
+    height :220px;
+    padding : 35px;
+    display : flex;
+    align-items: center;
+}
+
+.kit_picture {
+    margin-left : 50px;
+    width: 300px;
+}
+
+.right-main {
+    margin-left : 30px;
+    align-items : center;
+}
+
+.logo-block {
+    display : block;
+    width: 100%;
+    border-bottom : 2px solid black;
+    margin-bottom : 25px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.kit_name {
+    font-size : 0.6em;
+    color : rgb(0, 0, 0, 0.7)
+}
+
+.price {
+    display:inline-block;
+    margin-top : 10px;
+    font-weight : 700;
+}
+
+</style>
+</head>
+<body>
+    <div class = "outer-shell">
+        <span class="num">1</span>
+        <img class="kit_picture" src = "kit1.jpg"/>
+        <div class = "right-main">
+            <div class="logo-block">
+                <img class = "logo" src = "logo1.jpg"/>
+            </div>
+            <span class = "kit_name">빅뱅화학키트</span></br>
+            <span class = "price">\ 8,800</span>
+        </div>
+    </div>
+</body>
+</html>
